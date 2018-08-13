@@ -1,0 +1,33 @@
+{
+  "name": "VW-API",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./src/app.js",
+  "private": true,
+  "scripts": {
+    "serve": "nodemon ./src/app.js --exec babel-node",
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-babel",
+    "migrate:test": "./node_modules/.bin/sequelize db:migrate --config ./build/config/config.js --env test",
+    "migrate:dev": "./node_modules/.bin/sequelize db:migrate"
+  },
+  "dependencies": {
+    "apollo-server": "^2.0.0",
+    "got": "^9.0.0",
+    "graphql": "^0.13.2",
+    "mysql2": "^1.6.1",
+    "sequelize": "^5.0.0-beta.10",
+    "warframe-updates": "^1.0.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.51",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/node": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "babel-plugin-inline-dotenv": "^1.1.2",
+    "babel-plugin-wildcard": "^5.0.0",
+    "nodemon": "^1.18.3"
+  }
+}

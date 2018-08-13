@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "inline-dotenv",
+    "wildcard"
+  ],
+  "presets": [
+    "@babel/env"
+  ]
+}
