@@ -16,8 +16,10 @@
     "apollo-server": "^2.0.0",
     "got": "^9.0.0",
     "graphql": "^0.13.2",
+    "lodash": "^4.17.10",
     "mysql2": "^1.6.1",
     "sequelize": "^5.0.0-beta.10",
+    "warframe-items": "^1.29.0",
     "warframe-updates": "^1.0.6"
   },
   "devDependencies": {
