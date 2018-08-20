@@ -11,6 +11,19 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
+      uniqueName: {
+        type: Sequelize.STRING,
+        unique: true
+      },
+      description: {
+        type: Sequelize.TEXT
+      },
+      category: {
+        type: Sequelize.STRING
+      },
+      imageName: {
+        type: Sequelize.STRING
+      },
       data: {
         type: Sequelize.JSON
       },

@@ -1,5 +1,5 @@
 export default {
   Query: {
-    getBy: () => 'TESTS'
+    toto: () => 'Toto'
   }
 }

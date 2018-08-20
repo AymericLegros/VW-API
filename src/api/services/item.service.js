@@ -1,10 +1,15 @@
 import Items from 'warframe-items'
 
+import { Item } from '../../models'
+
 export default {
-  import (category = ['All']) {
-    console.log('ert')
-    const items = new Items({ category })
-    console.log('items ===>>>>>', items)
+  async import (category = ['All']) {
+    const warframeItems = new Items({ category })
+    warframeItems.pop()
+    for (let warframeItem of warframeItems) {
+      warframeItem.data = Object.assign({}, warframeItem)
+      await Item.create(warframeItem)
+    }
     return 'ok'
   }
 }
