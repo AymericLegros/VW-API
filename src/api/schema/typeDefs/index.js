@@ -8,6 +8,7 @@ const dafaultTypeDefs = gql`
   scalar JSON
 
   type Query
+  type Subscription
 `
 typeDefs.push(dafaultTypeDefs)
 
