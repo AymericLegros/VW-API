@@ -1,14 +1,4 @@
 import got from 'got';
-// import { Upload } from '../../models'
-
-import WarframeVersion from "warframe-updates";
-
-const warframeVersion = new WarframeVersion()
-
-// warframeVersion.on("update", async update => {
-//   console.log('update', update)
-//   await Upload.create(update)
-// })
 
 export default {
   async getWorldstate () {
