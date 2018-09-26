@@ -13,13 +13,13 @@
     "migrate:dev": "./node_modules/.bin/sequelize db:migrate"
   },
   "dependencies": {
-    "apollo-server": "^2.0.0",
+    "apollo-server": "^2.1.0",
     "got": "^9.0.0",
     "graphql": "^0.13.2",
     "lodash": "^4.17.10",
     "mysql2": "^1.6.1",
     "sequelize": "^5.0.0-beta.10",
-    "warframe-items": "^1.29.0"
+    "warframe-items": "^1.58.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.51",
